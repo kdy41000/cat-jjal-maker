@@ -140,24 +140,7 @@
           </ul>
         );
       }
-
-      const TestTag = () => {
-        const testArr = [
-          {num: 1 , name: "김동영"},
-          {num: 2 , name: "권다솜"},
-          {num: 3 , name: "김ㅁㅁㅁ"}
-        ];
-
-        const textNew = `${testArr.map(p => p +"입니다.")}`;
-        console.log("textNew:", textNew);
-        return (
-          <div> 
-            {testArr.map((p,index) => 
-             <p>{p.num} : {p.name} 입니다.</p> 
-            )}
-          </div>
-        );
-      }
+      
 
       const App = () => {
         const CAT1 = "https://cataas.com/cat/60b73094e04e18001194a309/says/react";
@@ -209,7 +192,6 @@
             <FormTag updateMainCat={updateMainCat}/>
             <MainCard img={defalutImg} text="고양이" onHeartClick={handleHeartClick} alreadyFavorite={alreadyFavorite} />
             <Favorites favorites={favorites} />
-            <TestTag />
           </div>
           );
        };
