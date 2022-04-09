@@ -140,7 +140,7 @@
           </ul>
         );
       }
-      
+
 
       const App = () => {
         const CAT1 = "https://cataas.com/cat/60b73094e04e18001194a309/says/react";
@@ -186,8 +186,8 @@
           jsonLocalStorage.setItem("favorites", nextFavorites); 
         }
 
-        return (
-          <div>
+        return ( 
+          <div> 
             <H1Tag>{(counter == null || counter === 0) ? "고양이 가라사대"  : `${counter} 번째 고양이 가라사대`}</H1Tag>
             <FormTag updateMainCat={updateMainCat}/>
             <MainCard img={defalutImg} text="고양이" onHeartClick={handleHeartClick} alreadyFavorite={alreadyFavorite} />
